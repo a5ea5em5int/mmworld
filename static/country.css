@@ -1,0 +1,13 @@
+body{
+	background-color: white;
+font-family:arial;
+font-size:11px;
+img{
+	float:right;
+	width:200px;
+	border:solid gray thick;
+}
+table{
+	width:50%;
+}
+}

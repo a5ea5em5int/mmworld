@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="static/country.css"> </link>
+	</head>
+<body><form action="country2">
+	<select name='id'>
+{% for c in w %}
+	<option value={{c.id}}>{{c.name}}</option>
+{% endfor %}
+
+<input type="submit"/>
+<ul>
+{% for c in w %}
+<li><a href="/country/{{c.id-1}}"	>{{c.name}}</a></li>
+
+{% endfor %}
+</ul>
+</form>
+</body>
+
+
+
+
+
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+	<title>{{c.name}}</title>
+	<link rel="stylesheet" href="static/country.css"> </link>
+	</head>
+<body>
+
+<tr><td>CountryName:<td>
+<td>{{c.name}}</td> </tr> 
+<tr><td>Continent:<td>
+<td>{{c.continent}}</td> </tr> 
+<tr><td>CountryPopulation:<td>
+<td>{{c.population}}</td> </tr> 
+<tr><td>gdp:<td>
+<td>{{c.gdp}}</td> </tr> 
+<tr><td>area:<td>
+<td>{{c.area}}km<sup>2<sup></td> </tr> 
+
+
+<div>flag: <img src="{{c.flag}}" style="width:60px;height:60px"></div>
+<a href="/country/{{c.id-1}}">previous</a>
+<a href="/country/{{c.id+1}}">Next</a>
+</body>
+
+
+
+
+
+</html>
